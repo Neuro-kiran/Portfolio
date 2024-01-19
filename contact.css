@@ -1,0 +1,23 @@
+/* Center the contact form */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value based on your design */
+}
+
+/* Optional: Adjust form width if needed */
+.content {
+    max-width: 600px; /* Adjust this value based on your design */
+    width: 100%;
+}
+
+/* Optional: Center the form elements */
+.container {
+    text-align: center;
+}
+
+/* Optional: Add some spacing to the form elements */
+.name, .email, .message {
+    margin-bottom: 15px;
+}
