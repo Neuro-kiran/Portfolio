@@ -1,146 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiran Marne</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="custom-styles.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kiran Marne</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kiran Marne</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/kiran_marne.png" alt="kiran marne picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kiran Marne</h1>
+        <p class="section__text__p2"> Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/no-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/kiran-marne-42436620a/', '_blank')"
+          />
+          <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="window.open('https://github.com/Neuro-kiran', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/kiran_01.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Honours</h3>
+              <p>Data Science AI ML<br />(IT)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Bachelor of Engineering</h3>
+              <p>Information Teachnology<br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Diploma</h3>
+              <p>Information Technology<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Hey</p>
+            <br>
+            <p>Welcome to my data-driven universe, where curiosity meets code and insights unfold. I am Kiran Marne, a passionate data scientist on a mission to unravel the mysteries hidden within vast arrays of information. With a keen eye for detail and an insatiable appetite for knowledge, I navigate the intricate landscapes of data to extract meaningful stories that drive informed decision-making.</p>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran Marne</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="custom-styles.css">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        .skills-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h2 {
+            color: #007acc;
+            font-size: 24px;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills-section li {
+            margin-bottom: 15px;
+        }
+        .skills-section strong {
+            color: #007acc;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="desktop-nav">
-        <div class="logo">Kiran Marne</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Kiran Marne</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Profile Section -->
-    <section id="profile" class="section">
-        <div class="profile-container">
-            <img src="./assets/kiran_marne.png" alt="Kiran Marne" class="profile-img">
-            <div class="profile-text">
-                <p>Hello, I'm</p>
-                <h1 class="title">Kiran Marne</h1>
-                <p>Data Scientist</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/no-resume.pdf')">Download CV</button>
-                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-                </div>
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/kiran-marne-42436620a/', '_blank')">
-                    <img src="./assets/github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/Neuro-kiran', '_blank')">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="./assets/kiran_01.jpg" alt="Profile" class="about-img">
-            <div class="about-text">
-                <p>Welcome to my data-driven universe, where curiosity meets code and insights unfold. I am Kiran Marne, a passionate data scientist on a mission to unravel the mysteries hidden within vast arrays of information.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <div class="skills-section">
         <h2>My Skills</h2>
-        <div class="skills-container">
-            <ul>
-                <li><strong>Programming:</strong> Proficient in Python and Object-Oriented Programming (OOP).</li>
-                <li><strong>Data Analysis:</strong> Experienced with NumPy, Pandas, Scikit-learn, and SQL.</li>
-                <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Plotly, Dashboards.</li>
-                <li><strong>Machine Learning:</strong> Decision Trees, SVM, KNN, Random Forest, K-means.</li>
-                <li><strong>Deep Learning:</strong> TensorFlow, Keras, PyTorch, CNN, RNN, OpenCV.</li>
-                <li><strong>NLP:</strong> NLTK, Transformers, Word Embeddings, GPT-3, BERT, LLaMA2.</li>
-                <li><strong>Statistical Analysis:</strong> PCA, Hypothesis Testing, Regression, ANOVA.</li>
-                <li><strong>Web Development:</strong> Flask, HTML, CSS.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Credit Default Prediction</h3>
-                <p>Developed models to predict loan repayment likelihood.</p>
-                <ul>
-                    <li><strong>Techniques:</strong> Python, Scikit-learn, Logistic Regression, Random Forest.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h3>Automated Quality Inspection</h3>
-                <p>System to inspect and identify defects in products.</p>
-                <ul>
-                    <li><strong>Techniques:</strong> PyTorch, TensorFlow, OpenCV, Transfer Learning.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h3>Text Summarization using Transformers</h3>
-                <p>Summarization model using transformer architecture.</p>
-                <ul>
-                    <li><strong>Techniques:</strong> Python, Hugging Face, BERT, GPT.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xnqlrbjq" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-color-1">Submit</button>
-        </form>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:marne.kiran44@gmail.com">marne.kiran44@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/kiran-marne-42436620a/">Kiran Marne</a></p>
-            <p>Phone: 7218427761 / 9370985446</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Kiran Marne</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <p>As the world of technology advances rapidly, I take pride in simplifying complexities, especially in the realms of AI and Data Science. Below are the areas where my expertise truly shines:</p>
+        
+        <ul>
+            <li><strong>Programming:</strong> Proficient in Python and Object-Oriented Programming (OOP), enabling the development of robust and scalable solutions.</li>
+            
+            <li><strong>Data Analysis:</strong> Experienced in using tools like NumPy, Pandas, and Scikit-learn for data manipulation and Exploratory Data Analysis (EDA). I also have strong SQL skills to manage and query databases efficiently.</li>
+            
+            <li><strong>Data Visualization:</strong> Adept at visualizing data with Matplotlib, Seaborn, and Plotly, and creating interactive dashboards to present insights effectively.</li>
+            
+            <li><strong>Machine Learning:</strong> Extensive knowledge of various algorithms including Decision Trees, Linear and Logistic Regression, Naive Bayes, K-Nearest Neighbor, Support Vector Machines, Random Forest, and K-means Clustering.</li>
+            
+            <li><strong>Deep Learning:</strong> Skilled in frameworks like TensorFlow, Keras, and PyTorch, with hands-on experience in building Convolutional Neural Networks (CNN), Artificial Neural Networks (ANN), and Recurrent Neural Networks (RNN). I also utilize OpenCV for computer vision tasks.</li>
+            
+            <li><strong>Natural Language Processing (NLP):</strong> Competent in NLP tasks with libraries like NLTK and Transformers. I work with Word Embeddings (Word2Vec, Doc2Vec, GloVe, Universal Sentence Encoder) for text analysis and sentiment classification. My experience extends to Named Entity Recognition (NER) and advanced NLP/Gen AI models like GPT-3, BART, BERT, and LLaMA2.</li>
+            
+            <li><strong>Statistical Analysis:</strong> Strong foundation in statistical techniques including PCA, Hypothesis Testing, Regression Analysis, ANOVA, and Cluster Analysis, allowing for data-driven decision-making.</li>
+            
+            <li><strong>Web Development:</strong> Capable of developing web applications using Flask, along with HTML and CSS, to build and deploy data-driven web platforms.</li>
+            
+            <li><strong>Professional Proficiency:</strong> With sound knowledge in AI and Machine Learning, I excel in building highly scalable and optimized engines for data analytics. My proficiency in Core Python and its libraries, combined with strong exposure to RDBMS (MySQL, MongoDB, DocumentDB, MSSQL) and server management, empowers me to deliver top-tier data solutions.</li>
+        </ul>
+    </div>
 </body>
 </html>
+
+      </section>
+</head>
+<body>
+    <div class="projects-section">
+        <h2>Projects</h2>
+        
+        <h3>Credit Default Prediction</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed models to accurately predict whether borrowers are likely to repay their loans or not.</li>
+            <li><strong>Techniques Used:</strong> Python, NumPy, Pandas, Matplotlib, Seaborn, SciPy, Scikit-learn, Data Preprocessing, Data Visualization, Feature Engineering, Classification models, Logistic Regression, SVC, Decision Tree, Random Forest Classifier.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Developed a machine learning model to analyze credit risk and predict loan repayment likelihood.</li>
+                <li>Processed and analyzed a dataset, addressing imbalanced data by using SMOTE and encoding categorical data through One-Hot and Label methods to enhance model performance.</li>
+                <li>Implemented Logistic Regression and Decision Tree Classifier; Random Forest Classifier demonstrated superior performance with an f1 score of 0.84.</li>
+            </ul>
+        </ul>
+        
+        <h3>Automated Quality Inspection System</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed a system to inspect and identify defects in manufactured products.</li>
+            <li><strong>Techniques Used:</strong> Python, PyTorch, TensorFlow, OpenCV, ONNX, Transfer Learning.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Created and annotated a dataset of defective and non-defective products.</li>
+                <li>Implemented defect detection using ResNet with transfer learning.</li>
+                <li>Deployed the model with real-time inspection capabilities and integrated it with manufacturing equipment.</li>
+                <li>Developed a dashboard for tracking defect rates and generating analytical reports.</li>
+            </ul>
+        </ul>
+        
+        <h3>Text Summarization using Transformers</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed a text summarization model using transformer architecture.</li>
+            <li><strong>Techniques Used:</strong> Python, Transformers, Hugging Face, NLP, BERT, GPT.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Preprocessed text data and created training datasets for summarization.</li>
+                <li>Implemented transformer models using Hugging Face Transformers library.</li>
+                <li>Fine-tuned BERT and GPT models for effective text summarization.</li>
+                <li>Evaluated model performance using ROUGE and BLEU scores.</li>
+            </ul>
+        </ul>
+    </div>
+</body>
+    </section>
+     </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/github.png"
+                            alt="GitHub Project"
+                            class="project-img"
+                            onclick="window.open('https://github.com/Neuro-kiran', '_blank')"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">GitHub Profile</h2>
+                    <div class="btn-container">
+                        <img 
+                            src="./assets/arrow-right.png"
+                            alt="arrow-right" 
+                            class="next"
+                            onclick="window.open('https://github.com/Neuro-kiran', '_blank')"
+                        >
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/kaggle.png"
+                            alt="Kaggle Project"
+                            class="project-img"
+                            onclick="window.open('https://www.kaggle.com/kiranmarne', '_blank')"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Kaggle Profile</h2>
+                    <div class="btn-container">
+                        <img 
+                            src="./assets/arrow-right.png"
+                            alt="arrow-right" 
+                            class="next"
+                            onclick="window.open('https://www.kaggle.com/kiranmarne', '_blank')"
+                        >
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/Doghub.png"
+                            br
+                            alt="Dogshub Project"
+                            class="project-img"
+                            onclick="window.open('https://dagshub.com/marne.kiran44', '_blank')"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Dogshub Profile</h2>
+                    <div class="btn-container">
+                        <img 
+                            src="./assets/arrow-right.png"
+                            alt="arrow-right" 
+                            class="next"
+                            onclick="window.open('https://dagshub.com/marne.kiran44', '_blank')"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+        />
+    </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        
+        <!-- Contact Form with Formspree -->
+        <form action="https://formspree.io/f/xnqlrbjq" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-1">Submit</button>
+        </form>
+        
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:marne.kiran44@gmail.com">marne.kiran44@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/kiran-marne-42436620a/">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p>7218427761/9370985446</p>
+          </div>
+        </div>
+      </section>
+      </section>  
+
+    <footer>
+      
+      
+    </footer>
+    <script src="script.js"></script>
+    <p>&#10024 Copy right &#169; 2024 Kiran Marne</p>
+  </body>
+</html> 
