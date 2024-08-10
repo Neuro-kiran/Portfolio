@@ -198,77 +198,91 @@
 </html>
 
       </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/github.png"
-                            alt="GitHub Project"
-                            class="project-img"
-                            onclick="window.open('https://github.com/Neuro-kiran', '_blank')"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">GitHub Profile</h2>
-                    <div class="btn-container">
-                        <img 
-                            src="./assets/arrow-right.png"
-                            alt="arrow-right" 
-                            class="next"
-                            onclick="window.open('https://github.com/Neuro-kiran', '_blank')"
-                        >
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/kaggle.png"
-                            alt="Kaggle Project"
-                            class="project-img"
-                            onclick="window.open('https://www.kaggle.com/kiranmarne', '_blank')"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Kaggle Profile</h2>
-                    <div class="btn-container">
-                        <img 
-                            src="./assets/arrow-right.png"
-                            alt="arrow-right" 
-                            class="next"
-                            onclick="window.open('https://www.kaggle.com/kiranmarne', '_blank')"
-                        >
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/Doghub.png"
-                            br
-                            alt="Dogshub Project"
-                            class="project-img"
-                            onclick="window.open('https://dagshub.com/marne.kiran44', '_blank')"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Dogshub Profile</h2>
-                    <div class="btn-container">
-                        <img 
-                            src="./assets/arrow-right.png"
-                            alt="arrow-right" 
-                            class="next"
-                            onclick="window.open('https://dagshub.com/marne.kiran44', '_blank')"
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#contact'"
-        />
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        .projects-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects-section h2 {
+            color: #007acc;
+            font-size: 24px;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .projects-section h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .projects-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .projects-section li {
+            margin-bottom: 15px;
+        }
+        .projects-section strong {
+            color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-section">
+        <h2>Projects</h2>
+        
+        <h3>Credit Default Prediction</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed models to accurately predict whether borrowers are likely to repay their loans or not.</li>
+            <li><strong>Techniques Used:</strong> Python, NumPy, Pandas, Matplotlib, Seaborn, SciPy, Scikit-learn, Data Preprocessing, Data Visualization, Feature Engineering, Classification models, Logistic Regression, SVC, Decision Tree, Random Forest Classifier.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Developed a machine learning model to analyze credit risk and predict loan repayment likelihood.</li>
+                <li>Processed and analyzed a dataset, addressing imbalanced data by using SMOTE and encoding categorical data through One-Hot and Label methods to enhance model performance.</li>
+                <li>Implemented Logistic Regression and Decision Tree Classifier; Random Forest Classifier demonstrated superior performance with an f1 score of 0.84.</li>
+            </ul>
+        </ul>
+        
+        <h3>Automated Quality Inspection System</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed a system to inspect and identify defects in manufactured products.</li>
+            <li><strong>Techniques Used:</strong> Python, PyTorch, TensorFlow, OpenCV, ONNX, Transfer Learning.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Created and annotated a dataset of defective and non-defective products.</li>
+                <li>Implemented defect detection using ResNet with transfer learning.</li>
+                <li>Deployed the model with real-time inspection capabilities and integrated it with manufacturing equipment.</li>
+                <li>Developed a dashboard for tracking defect rates and generating analytical reports.</li>
+            </ul>
+        </ul>
+        
+        <h3>Text Summarization using Transformers</h3>
+        <ul>
+            <li><strong>Objective:</strong> Developed a text summarization model using transformer architecture.</li>
+            <li><strong>Techniques Used:</strong> Python, Transformers, Hugging Face, NLP, BERT, GPT.</li>
+            <li><strong>Roles and Responsibilities:</strong></li>
+            <ul>
+                <li>Preprocessed text data and created training datasets for summarization.</li>
+                <li>Implemented transformer models using Hugging Face Transformers library.</li>
+                <li>Fine-tuned BERT and GPT models for effective text summarization.</li>
+                <li>Evaluated model performance using ROUGE and BLEU scores.</li>
+            </ul>
+        </ul>
+    </div>
+</body>
     </section>
     
     </section>
